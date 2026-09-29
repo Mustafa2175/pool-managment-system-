@@ -9,3 +9,4 @@ D:\Projects\swimming management system\src\SwimClub.Domain\obj\Debug\net8.0\Swim
 D:\Projects\swimming management system\src\SwimClub.Domain\obj\Debug\net8.0\refint\SwimClub.Domain.dll
 D:\Projects\swimming management system\src\SwimClub.Domain\obj\Debug\net8.0\SwimClub.Domain.pdb
 D:\Projects\swimming management system\src\SwimClub.Domain\obj\Debug\net8.0\ref\SwimClub.Domain.dll
+D:\Projects\swimming management system\src\SwimClub.Domain\obj\Debug\net8.0\SwimClub.Domain.sourcelink.json

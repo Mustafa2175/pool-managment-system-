@@ -73,6 +73,15 @@ public static class DependencyInjection
         // Recreational (Phase 10)
         services.AddScoped<SwimClub.Application.Recreational.IRecreationalService, SwimClub.Infrastructure.Recreational.RecreationalService>();
 
+        // Payroll (Phase 11)
+        services.AddScoped<SwimClub.Application.Payroll.IPayrollService, SwimClub.Infrastructure.Payroll.PayrollService>();
+
+        // Reports (Phase 12)
+        services.AddScoped<SwimClub.Application.Reports.IReportsService, SwimClub.Infrastructure.Reports.ReportsService>();
+
+        // Backup (Phase 13)
+        services.AddScoped<SwimClub.Application.Backup.IBackupService, SwimClub.Infrastructure.Backup.BackupService>();
+
         return services;
     }
 }

@@ -17,3 +17,4 @@ D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\ref\SwimClub.Infrastructure.dll
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\bin\Debug\net8.0\SwimClub.Infrastructure.runtimeconfig.json
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\SwimClub.Infrastructure.genruntimeconfig.cache
+D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\SwimClub.Infrastructure.sourcelink.json

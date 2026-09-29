@@ -100,3 +100,4 @@ D:\Projects\swimming management system\tests\SwimClub.Domain.Tests\obj\Debug\net
 D:\Projects\swimming management system\tests\SwimClub.Domain.Tests\obj\Debug\net8.0\SwimClub.Domain.Tests.pdb
 D:\Projects\swimming management system\tests\SwimClub.Domain.Tests\obj\Debug\net8.0\SwimClub.Domain.Tests.genruntimeconfig.cache
 D:\Projects\swimming management system\tests\SwimClub.Domain.Tests\obj\Debug\net8.0\ref\SwimClub.Domain.Tests.dll
+D:\Projects\swimming management system\tests\SwimClub.Domain.Tests\obj\Debug\net8.0\SwimClub.Domain.Tests.sourcelink.json

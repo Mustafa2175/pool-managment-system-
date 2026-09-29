@@ -114,3 +114,4 @@ D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI.pdb
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI.genruntimeconfig.cache
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\ref\SwimClub.UI.dll
+D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI.sourcelink.json

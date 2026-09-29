@@ -97,3 +97,4 @@ D:\Projects\swimming management system\tests\SwimClub.UI.Tests\obj\Debug\net8.0\
 D:\Projects\swimming management system\tests\SwimClub.UI.Tests\obj\Debug\net8.0\SwimClub.UI.Tests.pdb
 D:\Projects\swimming management system\tests\SwimClub.UI.Tests\obj\Debug\net8.0\SwimClub.UI.Tests.genruntimeconfig.cache
 D:\Projects\swimming management system\tests\SwimClub.UI.Tests\obj\Debug\net8.0\ref\SwimClub.UI.Tests.dll
+D:\Projects\swimming management system\tests\SwimClub.UI.Tests\obj\Debug\net8.0\SwimClub.UI.Tests.sourcelink.json

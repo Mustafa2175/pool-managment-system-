@@ -13,3 +13,4 @@ D:\Projects\swimming management system\src\SwimClub.Application\obj\Debug\net8.0
 D:\Projects\swimming management system\src\SwimClub.Application\obj\Debug\net8.0\refint\SwimClub.Application.dll
 D:\Projects\swimming management system\src\SwimClub.Application\obj\Debug\net8.0\SwimClub.Application.pdb
 D:\Projects\swimming management system\src\SwimClub.Application\obj\Debug\net8.0\ref\SwimClub.Application.dll
+D:\Projects\swimming management system\src\SwimClub.Application\obj\Debug\net8.0\SwimClub.Application.sourcelink.json

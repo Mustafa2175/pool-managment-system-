@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using SwimClub.Domain.Entities;
+using PayrollEntity = SwimClub.Domain.Entities.Payroll;
+using BackupEntity = SwimClub.Domain.Entities.Backup;
 
 namespace SwimClub.Infrastructure.Persistence;
 
@@ -64,13 +66,13 @@ public class AppDbContext : DbContext
     public DbSet<Expense> Expenses => Set<Expense>();
     public DbSet<Credit> Credits => Set<Credit>();
     public DbSet<CreditUsage> CreditUsages => Set<CreditUsage>();
-    public DbSet<Payroll> Payrolls => Set<Payroll>();
+    public DbSet<PayrollEntity> Payrolls => Set<PayrollEntity>();
 
     // Config & Admin
     public DbSet<CancellationFeeConfig> CancellationFeeConfigs => Set<CancellationFeeConfig>();
     public DbSet<SystemSetting> SystemSettings => Set<SystemSetting>();
     public DbSet<ScheduleDefaultsConfig> ScheduleDefaultsConfigs => Set<ScheduleDefaultsConfig>();
-    public DbSet<Backup> Backups => Set<Backup>();
+    public DbSet<BackupEntity> Backups => Set<BackupEntity>();
     public DbSet<AuditLog> AuditLogs => Set<AuditLog>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -700,7 +702,7 @@ public class AppDbContext : DbContext
         });
 
         // --- PAYROLL ---
-        b.Entity<Payroll>(e =>
+        b.Entity<PayrollEntity>(e =>
         {
             e.ToTable("payrolls");
             e.HasKey(x => x.PayrollId);
@@ -719,7 +721,7 @@ public class AppDbContext : DbContext
             e.Property(x => x.CreatedAt).HasColumnName("created_at");
             e.HasOne(x => x.Employee).WithMany(emp => emp.Payrolls).HasForeignKey(x => x.EmployeeId);
             e.HasOne(x => x.PaidByUser).WithMany().HasForeignKey(x => x.PaidByUserId);
-            e.HasOne(x => x.PayrollPaymentTransaction).WithOne().HasForeignKey<Payroll>("PayrollTransactionId");
+            e.HasOne(x => x.PayrollPaymentTransaction).WithOne().HasForeignKey<PayrollEntity>("PayrollTransactionId");
         });
 
         // --- PAYMENT ---
@@ -871,7 +873,7 @@ public class AppDbContext : DbContext
         });
 
         // --- BACKUP ---
-        b.Entity<Backup>(e =>
+        b.Entity<BackupEntity>(e =>
         {
             e.ToTable("backups");
             e.HasKey(x => x.BackupId);
@@ -880,6 +882,7 @@ public class AppDbContext : DbContext
             e.Property(x => x.FileSizeBytes).HasColumnName("file_size_bytes");
             e.Property(x => x.BackupType).HasColumnName("backup_type").IsRequired();
             e.HasCheckConstraint("ck_backup_type", "backup_type IN ('AUTOMATIC','MANUAL')");
+            e.Property(x => x.SystemVersion).HasColumnName("system_version").IsRequired().HasDefaultValue("1.0.0");
             e.Property(x => x.Encrypted).HasColumnName("encrypted").HasDefaultValue(true);
             e.Property(x => x.EncryptionKeyRef).HasColumnName("encryption_key_ref");
             e.Property(x => x.AttemptNumber).HasColumnName("attempt_number").HasDefaultValue(1);
@@ -912,6 +915,7 @@ public class AppDbContext : DbContext
             e.HasIndex(x => new { x.EntityType, x.EntityId });
             e.HasIndex(x => x.CreatedAt);
         });
+
     }
 
     private static void SeedRoles(ModelBuilder b)

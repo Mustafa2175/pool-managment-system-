@@ -13,6 +13,8 @@ public class Backup
     /// <summary>AUTOMATIC | MANUAL</summary>
     public string BackupType { get; set; } = null!;
 
+    public string SystemVersion { get; set; } = "1.0.0";
+
     /// <summary>Always true — encryption is mandatory (Decision 25).</summary>
     public bool Encrypted { get; set; } = true;
 
