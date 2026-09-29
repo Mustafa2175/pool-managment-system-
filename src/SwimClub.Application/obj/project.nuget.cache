@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "M62LVN/ZKiA=",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\swimming management system\\src\\SwimClub.Application\\SwimClub.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mustafa\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
