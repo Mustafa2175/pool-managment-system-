@@ -1,4 +1,5 @@
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\bin\Debug\net8.0\SwimClub.Infrastructure.deps.json
+D:\Projects\swimming management system\src\SwimClub.Infrastructure\bin\Debug\net8.0\SwimClub.Infrastructure.runtimeconfig.json
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\bin\Debug\net8.0\SwimClub.Infrastructure.dll
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\bin\Debug\net8.0\SwimClub.Infrastructure.pdb
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\bin\Debug\net8.0\SwimClub.Application.dll
@@ -10,11 +11,10 @@ D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\SwimClub.Infrastructure.AssemblyInfoInputs.cache
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\SwimClub.Infrastructure.AssemblyInfo.cs
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\SwimClub.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\SwimClub.Infrastructure.sourcelink.json
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\SwimClub.D3AC904B.Up2Date
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\SwimClub.Infrastructure.dll
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\refint\SwimClub.Infrastructure.dll
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\SwimClub.Infrastructure.pdb
-D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\ref\SwimClub.Infrastructure.dll
-D:\Projects\swimming management system\src\SwimClub.Infrastructure\bin\Debug\net8.0\SwimClub.Infrastructure.runtimeconfig.json
 D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\SwimClub.Infrastructure.genruntimeconfig.cache
-D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\SwimClub.Infrastructure.sourcelink.json
+D:\Projects\swimming management system\src\SwimClub.Infrastructure\obj\Debug\net8.0\ref\SwimClub.Infrastructure.dll

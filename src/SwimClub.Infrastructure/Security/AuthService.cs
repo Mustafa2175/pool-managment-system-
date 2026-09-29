@@ -23,20 +23,28 @@ public class AuthService : IAuthService
 
     public async Task<LoginResult> LoginAsync(string username, string password)
     {
+        // Always query DB first — then verify hash — generic error prevents user-enumeration
         var user = await _dbContext.Users
             .Include(u => u.Role)
             .Include(u => u.Employee)
             .FirstOrDefaultAsync(u => u.Username == username);
 
-        if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
+        // Timing-safe: hash verify even when user is null (with a dummy hash) to prevent timing attacks
+        string hashToVerify = user?.PasswordHash ?? BCrypt.Net.BCrypt.EnhancedHashPassword("dummy-prevent-timing");
+        bool passwordValid = BCrypt.Net.BCrypt.EnhancedVerify(password, hashToVerify);
+
+        if (user == null || !passwordValid)
         {
+            // Generic message — never leak whether username exists
             await _auditLogService.LogSystemEventAsync("LOGIN_FAILED", false, $"Attempted username: {username}");
             return LoginResult.InvalidCredentials;
         }
 
         if (!user.IsActive)
         {
-            await _auditLogService.LogSystemEventAsync("LOGIN_FAILED", false, $"Deactivated username: {username}");
+            // Log deactivated attempt but return same InvalidCredentials enum to UI,
+            // which must display a generic "Invalid username or password" message
+            await _auditLogService.LogSystemEventAsync("LOGIN_FAILED", false, $"Deactivated account attempted: {username}");
             return LoginResult.Deactivated;
         }
 

@@ -296,6 +296,7 @@ public class AppDbContext : DbContext
             e.Property(x => x.OutstandingDescription).HasColumnName("outstanding_description");
             e.Property(x => x.Status).HasColumnName("status").HasDefaultValue("ACTIVE");
             e.HasCheckConstraint("ck_sub_status", "status IN ('ACTIVE','PAUSED','COMPLETED','CANCELLED')");
+            e.HasCheckConstraint("ck_sub_balance_due", "balance_due >= 0");
             e.HasCheckConstraint("ck_sub_credit_outstanding_exclusive",
                 "credit_granted_amount IS NULL OR outstanding_declared_amount IS NULL");
             e.Property(x => x.RenewedFromSubscriptionId).HasColumnName("renewed_from_subscription_id");
@@ -451,6 +452,7 @@ public class AppDbContext : DbContext
             e.HasIndex(x => x.QrToken).IsUnique();
             e.Property(x => x.Status).HasColumnName("status").HasDefaultValue("ACTIVE");
             e.HasCheckConstraint("ck_pkg_status", "status IN ('ACTIVE','EXPIRED','CANCELLED')");
+            e.HasCheckConstraint("ck_pkg_balance_due", "balance_due >= 0");
             e.HasCheckConstraint("ck_pkg_credit_outstanding_exclusive",
                 "credit_granted_amount IS NULL OR outstanding_declared_amount IS NULL");
             e.HasCheckConstraint("ck_pkg_period_consistency",
@@ -620,6 +622,7 @@ public class AppDbContext : DbContext
                 .HasComputedColumnSql("total_price - paid_amount", stored: true);
             e.Property(x => x.Status).HasColumnName("status").HasDefaultValue("ACTIVE");
             e.HasCheckConstraint("ck_pb_status", "status IN ('ACTIVE','COMPLETED','CANCELLED')");
+            e.HasCheckConstraint("ck_pb_balance_due", "balance_due >= 0");
             e.Property(x => x.CreatedBy).HasColumnName("created_by");
             e.Property(x => x.CreatedAt).HasColumnName("created_at");
 

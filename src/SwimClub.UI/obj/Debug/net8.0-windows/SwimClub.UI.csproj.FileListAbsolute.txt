@@ -1,9 +1,3 @@
-D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI.csproj.AssemblyReference.cache
-D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\MainWindow.g.cs
-D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\App.g.cs
-D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI_Content.g.cs
-D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI_MarkupCompile.cache
-D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI_MarkupCompile.lref
 D:\Projects\swimming management system\src\SwimClub.UI\bin\Debug\net8.0-windows\SwimClub.UI.exe
 D:\Projects\swimming management system\src\SwimClub.UI\bin\Debug\net8.0-windows\SwimClub.UI.deps.json
 D:\Projects\swimming management system\src\SwimClub.UI\bin\Debug\net8.0-windows\SwimClub.UI.runtimeconfig.json
@@ -95,6 +89,12 @@ D:\Projects\swimming management system\src\SwimClub.UI\bin\Debug\net8.0-windows\
 D:\Projects\swimming management system\src\SwimClub.UI\bin\Debug\net8.0-windows\SwimClub.Application.pdb
 D:\Projects\swimming management system\src\SwimClub.UI\bin\Debug\net8.0-windows\SwimClub.Infrastructure.pdb
 D:\Projects\swimming management system\src\SwimClub.UI\bin\Debug\net8.0-windows\SwimClub.Domain.pdb
+D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI.csproj.AssemblyReference.cache
+D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\App.g.cs
+D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI_Content.g.cs
+D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI_MarkupCompile.cache
+D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI_MarkupCompile.lref
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\MainWindow.baml
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI.g.resources
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI.Resources.AppResources.resources
@@ -106,6 +106,7 @@ D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI.AssemblyInfoInputs.cache
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI.AssemblyInfo.cs
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI.csproj.CoreCompileInputs.cache
+D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI.sourcelink.json
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\ar\SwimClub.UI.resources.cs
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\ar\SwimClub.UI.resources.dll
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.43E5710F.Up2Date
@@ -114,4 +115,3 @@ D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI.pdb
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI.genruntimeconfig.cache
 D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\ref\SwimClub.UI.dll
-D:\Projects\swimming management system\src\SwimClub.UI\obj\Debug\net8.0-windows\SwimClub.UI.sourcelink.json

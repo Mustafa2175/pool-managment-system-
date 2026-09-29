@@ -32,7 +32,7 @@ public class AuthServiceTests
         var user = new User
         {
             Username = "admin",
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword("password123"),
+            PasswordHash = BCrypt.Net.BCrypt.EnhancedHashPassword("password123"),
             IsActive = true,
             Role = new Role { Code = "ADMINISTRATOR", NameEn = "Admin", NameAr = "Admin" }
         };
@@ -57,7 +57,7 @@ public class AuthServiceTests
         var user = new User
         {
             Username = "admin",
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword("password123"),
+            PasswordHash = BCrypt.Net.BCrypt.EnhancedHashPassword("password123"),
             IsActive = true,
             Role = new Role { Code = "ADMINISTRATOR", NameEn = "Admin", NameAr = "Admin" }
         };
@@ -82,7 +82,7 @@ public class AuthServiceTests
         var user = new User
         {
             Username = "admin",
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword("password123"),
+            PasswordHash = BCrypt.Net.BCrypt.EnhancedHashPassword("password123"),
             IsActive = false,
             Role = new Role { Code = "ADMINISTRATOR", NameEn = "Admin", NameAr = "Admin" }
         };

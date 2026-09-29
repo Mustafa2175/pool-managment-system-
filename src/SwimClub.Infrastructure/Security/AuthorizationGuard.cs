@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using SwimClub.Application.Interfaces;
 using SwimClub.Application.Security;
 
@@ -63,9 +64,31 @@ public class AuthorizationGuard : IAuthorizationGuard
         if (!HasPermission(action, targetRoleCode))
         {
             var user = _currentUserService.CurrentUser;
-            _auditLogService.LogFailureAsync("UNAUTHORIZED_ACTION_ATTEMPT", 
-                $"Action: {action}, TargetRole: {targetRoleCode ?? "none"}, ActorRole: {user?.Role?.Code ?? "Unauthenticated"}").GetAwaiter().GetResult();
+            // Fire-and-forget the async audit log (sync method boundary in desktop app).
+            // Use Task.Run to avoid deadlocking WPF SynchronizationContext.
+            Task.Run(async () =>
+            {
+                try
+                {
+                    await _auditLogService.LogFailureAsync(
+                        "UNAUTHORIZED_ACTION_ATTEMPT",
+                        $"Action: {action}, TargetRole: {targetRoleCode ?? "none"}, ActorRole: {user?.Role?.Code ?? "Unauthenticated"}");
+                }
+                catch { /* Audit must never throw */ }
+            });
             
+            throw new UnauthorizedAccessException("You do not have permission to perform this action.");
+        }
+    }
+
+    public async Task AuthorizeAsync(string action, string? targetRoleCode = null)
+    {
+        if (!HasPermission(action, targetRoleCode))
+        {
+            var user = _currentUserService.CurrentUser;
+            await _auditLogService.LogFailureAsync(
+                "UNAUTHORIZED_ACTION_ATTEMPT",
+                $"Action: {action}, TargetRole: {targetRoleCode ?? "none"}, ActorRole: {user?.Role?.Code ?? "Unauthenticated"}");
             throw new UnauthorizedAccessException("You do not have permission to perform this action.");
         }
     }

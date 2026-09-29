@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qWj//8qKK1w=",
+  "dgSpecHash": "sU/DxDcTEAk=",
   "success": true,
   "projectFilePath": "D:\\Projects\\swimming management system\\src\\SwimClub.UI\\SwimClub.UI.csproj",
   "expectedPackageFiles": [
@@ -60,6 +60,7 @@
     "C:\\Users\\mustafa\\.nuget\\packages\\system.diagnostics.eventlog\\10.0.12\\system.diagnostics.eventlog.10.0.12.nupkg.sha512",
     "C:\\Users\\mustafa\\.nuget\\packages\\system.io.pipelines\\10.0.12\\system.io.pipelines.10.0.12.nupkg.sha512",
     "C:\\Users\\mustafa\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\mustafa\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
     "C:\\Users\\mustafa\\.nuget\\packages\\system.text.encodings.web\\10.0.12\\system.text.encodings.web.10.0.12.nupkg.sha512",
     "C:\\Users\\mustafa\\.nuget\\packages\\system.text.json\\10.0.12\\system.text.json.10.0.12.nupkg.sha512"
   ],
